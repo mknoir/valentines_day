@@ -1,0 +1,64 @@
+.valentine-message {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  
+    h1 {
+      font-size: 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+  
+    .buttons {
+      margin-top: 20px;
+  
+      button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.2s ease, background-color 0.3s;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  
+      .yes-btn {
+        background-color: #ff4d79;
+        color: white;
+  
+        &:hover {
+          background-color: #ff1a5c;
+        }
+      }
+  
+      .no-btn {
+        background-color: #444;
+        color: white;
+  
+        &:hover {
+          background-color: #222;
+        }
+      }
+    }
+  
+    .response {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      animation: fadeIn 1s ease-in-out;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

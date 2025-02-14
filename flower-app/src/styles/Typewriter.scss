@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+.typewriter-container {
+  position: absolute;
+  top: 10%; // Moves text to the top of the screen
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.typewriter {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  color: #ff4081; // Valentine’s pink
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+  margin: 20px auto;
+  border-right: 3px solid #ff4081; // Blinking cursor effect
+  animation: blinkCursor 0.8s infinite;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}

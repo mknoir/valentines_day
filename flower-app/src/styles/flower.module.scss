@@ -1,0 +1,12 @@
+.flower {
+    display: inline-block;
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s ease, background-color 0.5s;
+  
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  
